@@ -1,6 +1,6 @@
 <?php
 function pdo_get_connect(){
-    $connect = new PDO("mysql:host=202.92.5.49;dbname=tmudobpahosting_nhom1;charset=utf8","tài khoản hosting","mật khẩu");
+    $connect = new PDO("mysql:host=202.92.5.49;dbname=tmudobpahosting_nhom1;charset=utf8","osting","mật khẩu");
     return $connect;
 }
 function pdo_execute($sql){
