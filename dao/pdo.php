@@ -37,8 +37,8 @@
             $connect = pdo_get_connect();
             $stmt = $connect->prepare($sql);
             $stmt->execute($sql_args);
-            $row = $stmt->fetchAll();
-            return $row;
+            $rows = $stmt->fetchAll();
+            return $rows;
         } catch (\Throwable $th) {
             throw $th;
         }finally{
