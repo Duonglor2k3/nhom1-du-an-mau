@@ -10,11 +10,16 @@
         href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@700&family=Roboto+Slab:wght@400;500&family=Roboto:ital@1&display=swap"
         rel="stylesheet">
 
+<<<<<<< Updated upstream
     <link rel="stylesheet" href="http://localhost/nhom1-du-an-mau/content/css/detail.css">
+=======
+    <link rel="stylesheet" href="http://localhost/nhom1-du-an-mau/content/css/detail/detail.css">
+>>>>>>> Stashed changes
 </head>
 
 <body>
     <div class="container">
+<<<<<<< Updated upstream
         <header>
             <section class="header__banner">
                 <div class="header__banner__introduce">
@@ -67,6 +72,8 @@
                 </div>
             </section>
         </header>
+=======
+>>>>>>> Stashed changes
         <main>
             <section>
                 <div class="tittle">
@@ -77,49 +84,81 @@
             <section>
                 <div class="main_content">
                     <div class="content">
+<<<<<<< Updated upstream
                         <img src="http://localhost/nhom1-du-an-mau/content/img/sp2.png" alt="">
+=======
+                        <img src="http://localhost/nhom1-du-an-mau/content/img/products/sp2.png" alt="">
+>>>>>>> Stashed changes
                         <p>Áo Không Logo HPL-Nikita Mới Nhất 2022 Màu Xanh Ya</p>
                         <span>giá : 200.000 </span>
                     </div>
 
                     <div class="content">
+<<<<<<< Updated upstream
                         <img src="http://localhost/nhom1-du-an-mau/content/img/sp4.png" alt="">
+=======
+                        <img src="http://localhost/nhom1-du-an-mau/content/img/products/sp4.png" alt="">
+>>>>>>> Stashed changes
                         <p>Áo Không Logo HPL-Nikita Mới Nhất 2022 Màu Xanh Ya</p>
                         <span>giá : 200.000 </span>
                     </div>
 
                     <div class="content">
+<<<<<<< Updated upstream
                         <img src="http://localhost/nhom1-du-an-mau/content/img/sp5.png" alt="">
+=======
+                        <img src="http://localhost/nhom1-du-an-mau/content/img/products/sp5.png" alt="">
+>>>>>>> Stashed changes
                         <p>Áo Không Logo HPL-Nikita Mới Nhất 2022 Màu Xanh Ya</p>
                         <span>giá : 200.000 </span>
                     </div>
 
                     <div class="content">
+<<<<<<< Updated upstream
                         <img src="http://localhost/nhom1-du-an-mau/content/img/sp3.png" alt="">
+=======
+                        <img src="http://localhost/nhom1-du-an-mau/content/img/products/sp3.png" alt="">
+>>>>>>> Stashed changes
                         <p>Áo Không Logo HPL-Nikita Mới Nhất 2022 Màu Xanh Ya</p>
                         <span>giá : 200.000 </span>
                     </div>
 
                     <div class="content">
+<<<<<<< Updated upstream
                         <img src="http://localhost/nhom1-du-an-mau/content/img/sp2.png" alt="">
+=======
+                        <img src="http://localhost/nhom1-du-an-mau/content/img/products/sp2.png" alt="">
+>>>>>>> Stashed changes
                         <p>Áo Không Logo HPL-Nikita Mới Nhất 2022 Màu Xanh Ya</p>
                         <span>giá : 200.000 </span>
                     </div>
 
                     <div class="content">
+<<<<<<< Updated upstream
                         <img src="http://localhost/nhom1-du-an-mau/content/img/sp4.png" alt="">
+=======
+                        <img src="http://localhost/nhom1-du-an-mau/content/img/products/sp4.png" alt="">
+>>>>>>> Stashed changes
                         <p>Áo Không Logo HPL-Nikita Mới Nhất 2022 Màu Xanh Ya</p>
                         <span>giá : 200.000 </span>
                     </div>
 
                     <div class="content">
+<<<<<<< Updated upstream
                         <img src="http://localhost/nhom1-du-an-mau/content/img/sp5.png" alt="">
+=======
+                        <img src="http://localhost/nhom1-du-an-mau/content/img/products/sp5.png" alt="">
+>>>>>>> Stashed changes
                         <p>Áo Không Logo HPL-Nikita Mới Nhất 2022 Màu Xanh Ya</p>
                         <span>giá : 200.000 </span>
                     </div>
 
                     <div class="content">
+<<<<<<< Updated upstream
                         <img src="http://localhost/nhom1-du-an-mau/content/img/sp3.png" alt="">
+=======
+                        <img src="http://localhost/nhom1-du-an-mau/content/img/products/sp3.png" alt="">
+>>>>>>> Stashed changes
                         <p>Áo Không Logo HPL-Nikita Mới Nhất 2022 Màu Xanh Ya</p>
                         <span>giá : 200.000 </span>
                     </div>
@@ -127,6 +166,7 @@
             </section>
 
         </main>
+<<<<<<< Updated upstream
         <footer>
             <section>
                 <div class="footer">
@@ -188,6 +228,9 @@
                 </div>
             </section>
         </footer>
+=======
+        
+>>>>>>> Stashed changes
     </div>
 </body>
 
