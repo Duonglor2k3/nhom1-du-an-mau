@@ -1,15 +1,4 @@
-<?php 
 
-    require '../dao/pdo.php';
-    require '../dao/products.php';
-    $dscate = products_select_all();
-    // var_dump($dscate);
-    foreach ($dscate as $loai){
-        extract($loai);
-        // echo '<li><a href="#">'.$price.'</a></li>';
-    }
-    
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,7 +28,7 @@
                     <div class="content">
                         <img src="http://localhost/nhom1-du-an-mau/content/img/products/sp2.png" alt="">
                         <p>Áo Không Logo HPL-Nikita Mới Nhất 2022 Màu Xanh Ya</p>
-                        <span>giá : <?php echo $price ?></span>
+                        <span>giá : </span>
                     </div>
 
                     <div class="content">

@@ -33,7 +33,7 @@
         </header>
     <div class="row">
         <main>
-            <?php include $VIEWNAME; ?>
+            
         </main>
     </div>
     <footer>
