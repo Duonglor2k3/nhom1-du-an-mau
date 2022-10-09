@@ -12,15 +12,15 @@ function product_select_id($id)
   return pdo_query_one($sql, $id);
 }
 //thêm
-function product_insert($name, $price, $description, $status, $type_id){
-  $sql = "INSERT INTO products (name, price,description, status, type_id) values(?, ?, ?, ?, ?)";
-  pdo_execute($sql, $name, $price, $description, $status, $type_id);
+function product_insert($name, $price, $description, $status, $type_id,$img){
+  $sql = "INSERT INTO products (name, price,description, status, type_id,img) values(?, ?, ?, ?, ?)";
+  pdo_execute($sql, $name, $price, $description, $status, $type_id,$img);
 }
 //sửa
-function product_update($id, $name, $price, $description, $status, $type_id)
+function product_update($id, $name, $price, $description, $status, $type_id,$img)
 {
-  $sql = "UPDATE products SET name = ?, price = ?, description = ?, status = ?, type_id = ? where id = ?";
-  pdo_execute($sql, $name, $price, $description, $status, $type_id);
+  $sql = "UPDATE products SET name = ?, price = ?, description = ?, status = ?, type_id = ? , img = ? where id = ?";
+  pdo_execute($sql, $name, $price, $description, $status, $type_id,$img);
 }
 //xoá
 function product_delete($id){
