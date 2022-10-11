@@ -5,11 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<<<<<<< Updated upstream
-</head>
-<body>
-    
-=======
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@700&family=Roboto+Slab:wght@400;500&family=Roboto:ital@1&display=swap"
         rel="stylesheet">
@@ -21,21 +16,57 @@
             <section class="header__banner">
                 <div class="header__banner__introduce">
                     <div class="">
-                        <h1>Quản Trị Website</h1>
+                        <h1>Shop đá Bóng Số 1 Hà Nội</h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="/nhom1-du-an-mau/site/index.php">Trang chủ</a></li>
+                            <li><a href="/nhom1-du-an-mau/site/index.php?gioi-thieu">Giới thiệu</a></li>
+                            <li><a href="/nhom1-du-an-mau/site/index.php?ao-nam">Áo nam</a></li>
+                            <li><a href="/nhom1-du-an-mau/site/index.php?ao-nu">Áo Nữ</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Quy Trình</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <section>
+                <div class="header__banner__logo">
+                    <div class="header__banner__logo__img">
+                        <img src="http://localhost/nhom1-du-an-mau/content/img/products/logo.png" alt="">
+                    </div>
+                    <div class="header__banner__logo__form">
+                        <form action="" class="search" method="post">
+                            <input type="text" class="searchTerm" placeholder="Bạn muốn tìm gì?">
+                        </form>
+                        <a href=""><img src="http://localhost/nhom1-du-an-mau/content/img/products/search.png" alt=""></a>
+                    </div>
+                    <div class="header__banner__logo__time">
+                        <p>9:00 - 17:00</p>
                     </div>
                 </div>
             </section>
-            <header>
-            <div class="row">
-             <?php require 'menu.php' ?>
-            </div>
-            </header>
+            <section>
+                <div class="header__banner__menu">
+                    <nav>
+                        <ul>
+                        <li><a href="/nhom1-du-an-mau/site/index.php">Trang chủ</a></li>
+                            <li><a href="/nhom1-du-an-mau/site/index.php?gioi-thieu">Giới thiệu</a></li>
+                            <li><a href="/nhom1-du-an-mau/site/index.php?ao-nam">Áo nam</a></li>
+                            <li><a href="/nhom1-du-an-mau/site/index.php?ao-nu">Áo Nữ</a></li>
+                            <li><a href="#">Áo MU</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="banner">
+                    <img src="http://localhost/nhom1-du-an-mau/content/img/products/banner.png" alt="">
+                </div>
+            </section>
         </header>
-    <div class="row">
-        <main>
-            <?php include $VIEWNAME; ?>
-        </main>
-    </div>
+    <main>
+        <?php include_once $VIEWNAME ?>
+    </main>
     <footer>
             <section>
                 <div class="footer">
@@ -98,6 +129,5 @@
             </section>
         </footer>
         </div>
->>>>>>> Stashed changes
 </body>
 </html>
