@@ -17,6 +17,59 @@
 </head>
 <body>
 <h1>DANH SÁCH SẢN PHẨM</h1>
+<div class="grow">
+                <div class="w-full mx-auto">
+                    <div class="">
+                        <div class="bg-[green] text-white p-[10px] text-[18px] leading-[20px] rounded-t-lg">Danh sách Sản Phẩm</div>
+                        <div class="pb-[15px] border border-[#ccc] border-solid rounded-b-lg">
+
+                            
+                            <div class="flex items-center justify-center mt-6">
+                                <table border=1 >
+                                    <tr class="font-bold p-[20px]">
+                                        <td class="">Mã Sản phẩm</td>
+                                        <td>Tên Sản phẩm</td>
+                                        <td>Ảnh</td>
+                                        <td>Giá</td>
+                                        <td>Mô tả</td>
+                                        <td>Trạng thái</td>
+                                        <td>Thời gian</td>
+                                        <td>Số lượng</td>
+                                        <td>Type</td>
+                                        <td>Sửa tài khoản</td>
+                                        <td>Xóa tài khoản</td>
+                                    </tr>
+                                    
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td> 
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../categories/index.php?update&id=">Sửa</a>
+                                    </td>
+                                    <td>
+                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../categories/index.php?remove&id=">Xóa</a>
+                                    </td>
+                                </tr>
+                                </table>
+                            </div>
+                        </div>
+                </div>
 <div class="text">
 <a href="index.php?add.php">Thêm mới sản phẩm</a>
 </div>
