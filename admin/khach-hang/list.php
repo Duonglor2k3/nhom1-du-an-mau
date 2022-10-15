@@ -1,68 +1,69 @@
-
+<?php
+require '../../dao/pdo.php';
+require '../../dao/users.php';
+$users = users_select_all();
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1{
+        h1 {
             margin: 20px 0;
         }
-        .text{
+
+        .text {
             margin-bottom: 10px;
         }
-    </style>
-</head>
-<body>
-<h1>DANH SÁCH KHÁCH HÀNG</h1>
-<div class="grow">
-                <div class="w-full mx-auto">
-                    <div class="">
-                        <div class="bg-[green] text-white p-[10px] text-[18px] leading-[20px] rounded-t-lg">Danh sách Khách Hàng</div>
-                        <div class="pb-[15px] border border-[#ccc] border-solid rounded-b-lg">
 
-                            
-                            <div class="flex items-center justify-center mt-6">
-                                <table >
-                                    <tr class="font-bold p-[20px]">
-                                        <td class="">Mã Khách Hàng</td>
-                                        <td>Tên Khách Hàng</td>
-                                        <td>Email</td>
-                                        <td>Mật Khẩu</td>
-                                        <td>Phone</td>
-                                        <td>Địa Chỉ</td>
-                                        <td>Sửa tài khoản</td>
-                                        <td>Xóa tài khoản</td>
-                                    </tr>
-                                    
-                                <tr>
-                                    <td>
-                                    </td>
-                                    <td> 
-                                    </td>
-                                    <td>
-                                    </td>
-                                    <td>
-                                    </td>
-                                    <td>
-                                    </td>
-                                    <td>
-                                    </td>
-                                    <td>
-                                        <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../categories/index.php?update&id=">Sửa</a>
-                                    </td>
-                                    <td>
-                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../categories/index.php?remove&id=">Xóa</a>
-                                    </td>
-                                </tr>
-                                </table>
-                            </div>
-                        </div>
-                </div>
-<div class="text">
-<a href="index.php?add.php">Thêm mới khách hàng</a>
-</div>
+        td {
+            width: calc(100% / 6);
+        }
+    </style>
+</head> 
+
+<body>
+    <h1>DANH SÁCH Khách Hàng</h1>
+
+    <div class="container">
+        <table border="1">
+            <div class="text">
+                <a href="index.php?add.php">Thêm mới sản phẩm</a>
+            </div>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>phone</th>
+                    <th>address</th>
+                    <th>password</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <?php foreach ($users as $key => $user) : ?>
+                    <tr>
+                        <td><?php echo $key + 1 ?></td>
+                        <td><?php echo $user["name"] ?></td>
+                        <td><?php echo $user["email"] ?></td>
+                        <td><?php echo $user["phone"] ?></td>
+                        <td><?php echo $user["address"] ?></td>
+                        <td><?php echo $user["password"] ?></td>
+                        <td>
+                            <a href="./update.php?id=<?php echo $user["id"] ?>">Update</a>
+                            <a href="./delete.php?id=<?php echo $user["id"] ?>" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
 </body>
+
 </html>

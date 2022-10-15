@@ -15,6 +15,9 @@
     else if (isset($_GET['ao-nu'])){
         $VIEWNAME = 'ao-nu.php';
     } 
+    else if (isset($_GET['chi-tiet'])){
+        $VIEWNAME = 'chi-tiet.php';
+    } 
     else {
         $VIEWNAME = 'home.php';
     }

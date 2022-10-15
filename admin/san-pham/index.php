@@ -7,4 +7,6 @@
         $VIEWNAME ="add.php";
     }
     require "../layout.php";
+
+
 ?>

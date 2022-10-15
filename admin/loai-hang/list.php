@@ -1,4 +1,9 @@
+<?php
+require '../../dao/pdo.php';
+require '../../dao/categories.php';
+$category = categories_select_all();
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,40 +22,34 @@
 </head>
 <body>
 <h1>DANH SÁCH LOẠI HÀNG</h1>
-<div class="grow">
-                <div class="w-full mx-auto">
-                    <div class="">
-                        <div class="bg-[green] text-white p-[10px] text-[18px] leading-[20px] rounded-t-lg">Danh sách danh mục</div>
-                        <div class="pb-[15px] border border-[#ccc] border-solid rounded-b-lg">
+<div class="text">
+<div class="container">
+        <table border="1">
+            <div class="text">
+                <a href="index.php?add.php">Thêm mới sản phẩm</a>
+            </div>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
 
-                            
-                            <div class="flex items-center justify-center mt-6">
-                                <table>
-                                    <tr class="font-bold p-[20px]">
-                                        <td class="">Mã danh mục</td>
-                                        <td>Tên danh mục</td>
-                                        <td>Sửa tài khoản</td>
-                                        <td>Xóa tài khoản</td>
-                                    </tr>
-                                    
-                                <tr>
-                                    <td>
-                                    </td>
-                                    <td>
-                                        
-                                    </td>
-                                    <td>
-                                        <a class="border border-[#000] p-2 bg-[#008844] text-white" href="../categories/index.php?update&id=">Sửa</a>
-                                    </td>
-                                    <td>
-                                        <a class="border border-[#000] p-2 bg-[#d62d20] text-white" href="../categories/index.php?remove&id=">Xóa</a>
-                                    </td>
-                                </tr>
-                                </table>
-                            </div>
-                        </div>
-                </div>
-<a href="index.php?add.php">Thêm mới loại hàng</a>
+            <tbody>
+                <?php foreach ($category as $key => $cate) : ?>
+                    <tr>
+                        <td><?php echo $key + 1 ?></td>
+                        <td><?php echo $cate["name"] ?></td>
+                        <td>
+                            <a href="./update.php?id=<?php echo $cate["id"] ?>">Update</a>
+                            <a href="./delete.php?id=<?php echo $cate["id"] ?>" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
 </div>
 </body>
 </html>
