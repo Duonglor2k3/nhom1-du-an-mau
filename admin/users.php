@@ -1,29 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-            margin: 20px 0;
-        }
-        .text{
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-<h1>THÊM MỚI KHÁCH HÀNG</h1>
-<div class="text">
-<a href="index.php?btn_list">Danh sách khách hàng</a>
-<<<<<<< Updated upstream
-=======
 <?php 
 
     require '../../dao/pdo.php';
     require '../../dao/users.php'; 
+    $dscate = users_select_all();
+    // var_dump($dscate);
+    if(isset($_POST['btn_prd']))
+    foreach ($dscate as $loai){
+        extract($loai);
+        echo '<li><a href="#">'.$name.'</a>name</li>';
+        echo '<li><a href="#">'.$email.'</a>email</li>';
+        echo '<li><a href="#">'.$phone.'</a>phone</li>';
+        echo '<li><a href="#">'.$address.'</a>address</li>';
+        echo '<li><a href="#">'.$password.'</a>password</li>';
+    }
     // thêm loại
     if(isset($_POST['btn_prd'])){
         $name = $_POST['name'];
@@ -41,10 +30,10 @@
     <input type="number" name="phone" id="" placeholder="phone"> <br>
     <input type="text" name="address" id="" placeholder="address"> <br>
     <input type="text" name="password" id="" placeholder="password"> <br>
+    <!-- <input type="number" name="price" id="" placeholder="price"> <br>
+    <input type="text" name="desc" id="" placeholder="desc"> <br>
+    <input type="text" name="status" id="" placeholder="status"> <br>
+    <input type="number" name="quality" id="" placeholder="quality"> <br>
+    <input type="number" name="date" id="" placeholder="date"> <br> -->
     <input type="submit" name="btn_prd" id="" value="submit">
 </form>
-
->>>>>>> Stashed changes
-</div>
-</body>
-</html>

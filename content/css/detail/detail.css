@@ -74,6 +74,10 @@ nav li a{
     width: 100%;
     height: 56px;
     background-color: #099809;
+<<<<<<< Updated upstream
+=======
+    margin-bottom: 56px;
+>>>>>>> Stashed changes
 }
 .tittle span{
     display: inline-block;
@@ -86,20 +90,37 @@ nav li a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 32px;
+<<<<<<< Updated upstream
     padding: 52px 20px;
 }
+=======
+}
+.content{
+    
+    margin-left: 20px;
+}
+
+>>>>>>> Stashed changes
 .content p{
     color: #0000FFB2;
     font-size: 20px;
     margin-top: 21px;
     margin-bottom: 20px ;
 }
+<<<<<<< Updated upstream
 .content img{
     width: 100%;
 }
 .content span{
     display: inline-block;
     color: #CC1818;
+=======
+
+.content span{
+    display: inline-block;
+    color: #CC1818;
+    margin-bottom: 72px;
+>>>>>>> Stashed changes
     font-size: 20px;
 }
 

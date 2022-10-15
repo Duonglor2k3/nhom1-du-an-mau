@@ -14,6 +14,12 @@
     }
     else if (isset($_GET['ao-nu'])){
         $VIEWNAME = 'ao-nu.php';
+<<<<<<< Updated upstream
+=======
+    } 
+    else if (isset($_GET['chi-tiet'])){
+        $VIEWNAME = 'chi-tiet.php';
+>>>>>>> Stashed changes
     } 
     else {
         $VIEWNAME = 'home.php';

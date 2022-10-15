@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 </head>
 <body>
     
 =======
+=======
+>>>>>>> Stashed changes
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@700&family=Roboto+Slab:wght@400;500&family=Roboto:ital@1&display=swap"
         rel="stylesheet">
@@ -33,7 +36,11 @@
         </header>
     <div class="row">
         <main>
+<<<<<<< Updated upstream
             
+=======
+            <?php include $VIEWNAME; ?>
+>>>>>>> Stashed changes
         </main>
     </div>
     <footer>
@@ -98,6 +105,9 @@
             </section>
         </footer>
         </div>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 </body>
 </html>

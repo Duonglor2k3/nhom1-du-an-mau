@@ -7,4 +7,9 @@
         $VIEWNAME ="add.php";
     }
     require "../layout.php";
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 ?>

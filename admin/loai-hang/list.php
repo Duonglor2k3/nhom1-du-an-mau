@@ -1,4 +1,13 @@
+<<<<<<< Updated upstream
 
+=======
+<?php
+require '../../dao/pdo.php';
+require '../../dao/categories.php';
+$category = categories_select_all();
+
+?>
+>>>>>>> Stashed changes
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +27,37 @@
 <body>
 <h1>DANH SÁCH LOẠI HÀNG</h1>
 <div class="text">
+<<<<<<< Updated upstream
 <a href="index.php?add.php">Thêm mới loại hàng</a>
+=======
+<div class="container">
+        <table border="1">
+            <div class="text">
+                <a href="index.php?add.php">Thêm mới sản phẩm</a>
+            </div>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <?php foreach ($category as $key => $cate) : ?>
+                    <tr>
+                        <td><?php echo $key + 1 ?></td>
+                        <td><?php echo $cate["name"] ?></td>
+                        <td>
+                            <a href="./update.php?id=<?php echo $cate["id"] ?>">Update</a>
+                            <a href="./delete.php?id=<?php echo $cate["id"] ?>" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+>>>>>>> Stashed changes
 </div>
 </body>
 </html>

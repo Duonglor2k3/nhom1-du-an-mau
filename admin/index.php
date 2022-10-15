@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,3 +11,8 @@
     <h1>Day la trang chu</h1>
 </body>
 </html>
+=======
+<?php 
+    header("Location: http://localhost/nhom1-du-an-mau/admin/home");
+?>
+>>>>>>> Stashed changes
