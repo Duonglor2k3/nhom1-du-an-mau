@@ -5,11 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<<<<<<< Updated upstream
-</head>
-<body>
-    
-=======
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@700&family=Roboto+Slab:wght@400;500&family=Roboto:ital@1&display=swap"
         rel="stylesheet">
@@ -33,7 +28,7 @@
         </header>
     <div class="row">
         <main>
-            
+            <?php include $VIEWNAME; ?>
         </main>
     </div>
     <footer>
@@ -98,6 +93,5 @@
             </section>
         </footer>
         </div>
->>>>>>> Stashed changes
 </body>
 </html>
