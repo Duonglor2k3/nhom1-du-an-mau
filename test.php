@@ -1,7 +1,7 @@
 <?php 
-    include_once '../dao/pdo.php';
-    include '../dao/categories.php';
-    $dscate = categories_select_all();
-    var_dump($dscate);
+    require "../../dao/base_dao.php";
+    require '../../dao/categories.php';  
+  $vsc = categories_select_all();
+  var_dump($vsc);
     
 ?>

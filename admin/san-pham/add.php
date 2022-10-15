@@ -50,6 +50,7 @@ if (isset($_POST['btn_prd'])) {
     <input type="number" name="date" id="" placeholder="date"> <br>
     <input type="text" name="img" id="" placeholder="img"> <br>
     <input type="submit" name="btn_prd" id="" value="submit">
+    </form>
     </div>
 </body>
 

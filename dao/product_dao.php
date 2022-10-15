@@ -13,7 +13,7 @@ function product_select_id($id)
 }
 //thêm
 function product_insert($name, $price, $description, $status, $type_id,$img){
-  $sql = "INSERT INTO products (name, price,description, status, type_id,img) values(?, ?, ?, ?, ?)";
+  $sql = "INSERT INTO products (name, price,description, status, type_id,img) values(?, ?, ?, ?, ?,?)";
   pdo_execute($sql, $name, $price, $description, $status, $type_id,$img);
 }
 //sửa

@@ -9,7 +9,7 @@
         return pdo_query_one($sql,$id);
     }
     function products_insert($name, $price, $desc, $status, $type_id, $quality, $date, $img){
-         $sql = "INSERT INTO products(name, price, desc, status, type_id, quality, date, img) Values (?,?,?,?,?,?,?,?)";
+         $sql = "INSERT INTO products(name, price, desc, status, type_id, quality, date, img) values (?,?,?,?,?,?,?,?)";
          pdo_execute($sql , $name, $price, $desc, $status, $type_id, $quality, $date, $img);
     }
      function products_update($id,$name){
