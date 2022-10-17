@@ -1,7 +1,7 @@
 <?php
 require '../../dao/pdo.php';
 require '../../dao/categories.php';
-$category = categories_select_all();
+$category = get_all_categories();
 
 ?>
 <!DOCTYPE html>

@@ -1,7 +1,7 @@
 <?php
 require '../../dao/pdo.php';
 require '../../dao/products.php';
-$producs = products_select_all();
+$producs = get_all_products();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,13 +39,11 @@ $producs = products_select_all();
                     <th>#</th>
                     <th>Tên</th>
                     <th>price</th>
-                    <th>desc</th>
+                    <th>mo ta</th>
+                    <th>so luong</th>
                     <th>status</th>
                     <th>type_id</th>
-                    <th>quality</th>
-                    <th>date</th>
                     <th>img</th>
-                    <th>Action</th>
                 </tr>
             </thead>
 
@@ -55,11 +53,10 @@ $producs = products_select_all();
                         <td><?php echo $key + 1 ?></td>
                         <td><?php echo $produc["name"] ?></td>
                         <td><?php echo $produc["price"] ?></td>
-                        <td><?php echo $produc["desc"] ?></td>
+                        <td><?php echo $produc["mo_ta"] ?></td>
+                        <td><?php echo $produc["so_luong"] ?></td>
                         <td><?php echo $produc["status"] ?></td>
                         <td><?php echo $produc["type_id"] ?></td>
-                        <td><?php echo $produc["quality"] ?></td>
-                        <td><?php echo $produc["date"] ?></td>
                         <td><?php echo $produc["img"] ?></td>
                         <td>
                             <a href="./update.php?id=<?php echo $produc["id"] ?>">Update</a>
