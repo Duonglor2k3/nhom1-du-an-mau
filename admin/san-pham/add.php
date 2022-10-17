@@ -6,14 +6,13 @@ require '../../dao/products.php';
 if (isset($_POST['btn_prd'])) {
     $name = $_POST['name'];
     $price = $_POST['price'];
-    $desc = $_POST['desc'];
+    $mo_ta = $_POST['mo_ta'];
+    $so_luong = $_POST['so_luong'];
     $status = $_POST['status'];
     $type_id = $_POST['type_id'];
-    $quality = $_POST['quality'];
-    $date = $_POST['date'];
     $img = $_POST['img'];
 
-    products_insert($name, $price, $desc, $status, $type_id, $quality, $date, $img);
+    products_insert($name, $price, $mo_ta, $so_luong, $status, $type_id, $img);
 
 }
 ?>
@@ -43,13 +42,13 @@ if (isset($_POST['btn_prd'])) {
     <form action="" method="POST">
     <input type="text" name="name" id="" placeholder="name"> <br>
     <input type="number" name="price" id="" placeholder="price"> <br>
-    <input type="text" name="desc" id="" placeholder="desc"> <br>
+    <input type="text" name="mo_ta" id="" placeholder="mo_ta"> <br>
+    <input type="number" name="so_luong" id="" placeholder="so_luong"> <br>
     <input type="text" name="status" id="" placeholder="status"> <br>
     <input type="number" name="type_id" id="" placeholder="type_id"> <br>
-    <input type="number" name="quality" id="" placeholder="quality"> <br>
-    <input type="number" name="date" id="" placeholder="date"> <br>
     <input type="text" name="img" id="" placeholder="img"> <br>
     <input type="submit" name="btn_prd" id="" value="submit">
+    </form>
     </div>
 </body>
 

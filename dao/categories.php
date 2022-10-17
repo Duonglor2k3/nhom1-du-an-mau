@@ -1,9 +1,13 @@
 <?php
-
-    function categories_select_all(){
-        $sql = "Select * from categories ";
-        return pdo_query($sql);
+function get_all_categories($list_ids = []){
+    $sqlQuery = "select * from categories";
+    // $list_ids = [5, 4]
+    if(count($list_ids) > 0){
+        // select * from categories where id in (5, 4)
+        $sqlQuery .= " where id in (" . implode(', ', $list_ids) . ")";
     }
+    return pdo_query($sqlQuery);
+}
     function categories_select_one($id){
         $sql = "SELECT * FROM categories where id  = ?";
         return pdo_query_one($sql,$id);

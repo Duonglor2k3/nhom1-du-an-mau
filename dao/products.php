@@ -1,16 +1,21 @@
 <?php
 
-    function products_select_all(){
-        $sql = "Select * from products";
-        return pdo_query($sql);
+function get_all_products($list_ids = []){
+    $sqlQuery = "select * from products";
+    // $list_ids = [5, 4]
+    if(count($list_ids) > 0){
+        // select * from categories where id in (5, 4)
+        $sqlQuery .= " where id in (" . implode(', ', $list_ids) . ")";
     }
+    return pdo_query($sqlQuery);
+}
     function products_select_one($id){
         $sql = "SELECT * FROM products where id  = ?";
         return pdo_query_one($sql,$id);
     }
-    function products_insert($name, $price, $desc, $status, $type_id, $quality, $date, $img){
-         $sql = "INSERT INTO products(name, price, desc, status, type_id, quality, date, img) Values (?,?,?,?,?,?,?,?)";
-         pdo_execute($sql , $name, $price, $desc, $status, $type_id, $quality, $date, $img);
+    function products_insert($name, $price,$mo_ta,$so_luong,$status,$type_id,$img){
+        $sqlQuery = "INSERT INTO products (name,price,mo_ta,so_luong,status,type_id,img) VALUES (?,?,?,?,?,?,?)";
+        pdo_execute($sqlQuery, $name, $price,$mo_ta,$so_luong,$status,$type_id,$img);
     }
      function products_update($id,$name){
         $sql = "UPDATE products SET name = ? WHERE id = ?";

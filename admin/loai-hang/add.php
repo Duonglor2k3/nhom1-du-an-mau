@@ -22,7 +22,6 @@
 
     require '../../dao/pdo.php';
     require '../../dao/categories.php'; 
-    $dscate = categories_select_all();
     // thêm loại
     if(isset($_POST['name'])){
         $name = $_POST['name'];
