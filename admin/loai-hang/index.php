@@ -3,8 +3,10 @@
     extract($_REQUEST);
     if(exist_param("btn_list")){
         $VIEWNAME ="list.php";
-    }else{
+    }
+    else{
         $VIEWNAME ="add.php";
     }
+
     include_once "../layout.php";
 ?>
