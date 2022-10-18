@@ -24,9 +24,17 @@
     }
     
     function pdo_query_one($sql){
-        $connect = pdo_get_connect();
-        $stmt = $connect->prepare($sql);
-        $stmt->execute();
-        return $stmt->fetch();
+        $sql_args = array_slice(func_get_args(),1);
+        try {
+            $connect = pdo_get_connect();
+            $stmt = $connect->prepare($sql);
+            $stmt->execute($sql_args);
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $row;
+        } catch (\Throwable $th) {
+            throw $th;
+        }finally{
+            unset($connect);
+        }
     }
 ?>

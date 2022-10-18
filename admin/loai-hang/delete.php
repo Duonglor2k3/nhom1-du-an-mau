@@ -1,7 +1,7 @@
 <?php
 require '../../dao/pdo.php';
 require '../../dao/categories.php';
-$id = $_GET['id'];
-$delelte = categories_delete($id);
+$id = $_GET['cate-id'];
 header('location: index.php?btn_list');
+
 ?>

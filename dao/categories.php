@@ -10,7 +10,7 @@ function get_all_categories($list_ids = []){
 }
     function categories_select_one($id){
         $sql = "SELECT * FROM categories where id  = ?";
-        return pdo_query_one($sql,$id);
+        return pdo_query_one($sql, $id);
     }
     function categories_insert($name){
          $sql = "INSERT INTO categories(name) Values (?)";

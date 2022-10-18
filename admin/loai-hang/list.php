@@ -42,8 +42,8 @@ $category = get_all_categories();
                         <td><?php echo $key + 1 ?></td>
                         <td><?php echo $cate["name"] ?></td>
                         <td>
-                            <a href="./update.php?id=<?php echo $cate["id"] ?>">Update</a>
-                            <a href="./delete.php?id=<?php echo $cate["id"] ?>" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+                            <a href="./update.php?cate-up-id=<?php echo $cate["id"] ?>">Update</a>
+                            <a href="./delete.php?cate-id=<?php echo $cate["id"] ?>" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
