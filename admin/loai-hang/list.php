@@ -1,7 +1,7 @@
 <?php
-require '../../dao/pdo.php';
-require '../../dao/categories.php';
-$category = get_all_categories();
+// require '../../dao/pdo.php';
+// require '../../dao/categories.php';
+$category = categories_select_all();
 
 ?>
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ $category = get_all_categories();
                         <td><?php echo $key + 1 ?></td>
                         <td><?php echo $cate["name"] ?></td>
                         <td>
-                            <a href="./update.php?cate-up-id=<?php echo $cate["id"] ?>">Update</a>
+                             <a href="./update.php?cate-up-id=<?php echo $cate["id"] ?>">Update</a>
                             <a href="./delete.php?cate-id=<?php echo $cate["id"] ?>" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
                         </td>
                     </tr>

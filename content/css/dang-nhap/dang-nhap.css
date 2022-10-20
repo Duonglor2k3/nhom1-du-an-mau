@@ -1,0 +1,58 @@
+.main_tittle{
+    font-size: 55px;
+    text-align: center;
+    margin: 100px 0 67px 0;
+    color: #099828;
+}
+form{
+    margin: 0 auto;
+    width: 700px;
+
+}
+.user{
+    margin-bottom: 20px;
+}
+.user input{
+    width: 700px;
+    height: 50px;
+    border-color: #099809;
+    border-radius: 7px;
+    padding-left: 10px;
+
+}
+
+.password input{
+    width: 700px;
+    height: 50px;
+    border-color: #099809;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+}
+.phuong_thuc{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+.dang_nhap button{
+    width: 169px;
+    height: 50px;
+    margin-left: 259px;
+    background-color: #099828;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.dang_ki button{
+    width: 169px;
+    height: 50px;
+    margin-left: 259px;
+    border-color: #099809;
+    background-color: #FFFFFF;
+    color: #099809;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}

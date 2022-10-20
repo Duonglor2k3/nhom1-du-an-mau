@@ -18,6 +18,12 @@
     else if (isset($_GET['chi-tiet'])){
         $VIEWNAME = 'chi-tiet.php';
     } 
+    else if (isset($_GET['dang-ki'])){
+        $VIEWNAME = 'dang-ki.php';
+    }
+    else if (isset($_GET['dang-nhap'])){
+        $VIEWNAME = 'dang-nhap.php';
+    }
     else {
         $VIEWNAME = 'home.php';
     }

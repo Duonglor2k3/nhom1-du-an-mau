@@ -28,6 +28,11 @@
                             <li><a href="">Quy Trình</a></li>
                         </ul>
                     </nav>
+                    <div class="login">
+                        <a href="./dang-nhap.php">Đăng nhập</a>
+                        <a href="./dang-ki.php">Đăng kí</a>
+
+                    </div>
                 </div>
             </section>
             <section>

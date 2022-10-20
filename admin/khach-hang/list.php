@@ -53,7 +53,7 @@ $users = users_select_all();
                         <td><?php echo $user["name"] ?></td>
                         <td><?php echo $user["email"] ?></td>
                         <td><?php echo $user["phone"] ?></td>
-                        <td><?php echo $user["address"] ?></td>
+                        <td><?php echo $user["addrss"] ?></td>
                         <td><?php echo $user["password"] ?></td>
                         <td>
                             <a href="./update.php?id=<?php echo $user["id"] ?>">Update</a>

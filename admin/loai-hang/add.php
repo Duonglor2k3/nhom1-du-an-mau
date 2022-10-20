@@ -18,19 +18,9 @@
 <h1>THÊM MỚI LOẠI HÀNG</h1>
 <div class="text">
 <a href="index.php?btn_list">Danh sách loại hàng</a>
-<?php 
-
-    require '../../dao/pdo.php';
-    require '../../dao/categories.php'; 
-    // thêm loại
-    if(isset($_POST['name'])){
-        $name = $_POST['name'];
-        categories_insert($name);
-    }
-?>
-<form action="" method="post">
+<form action="" method="POST" enctype="multipart/form-data">
     <input type="text" name="name" id="" placeholder="name"> <br>
-    <input type="submit" name="btn_prd" id="" value="submit">
+    <input type="submit" name="btn_insert" id="" value="submit">
 </form>
 </div>
 </body>

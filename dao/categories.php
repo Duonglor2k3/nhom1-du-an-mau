@@ -1,19 +1,15 @@
 <?php
-function get_all_categories($list_ids = []){
-    $sqlQuery = "select * from categories";
-    // $list_ids = [5, 4]
-    if(count($list_ids) > 0){
-        // select * from categories where id in (5, 4)
-        $sqlQuery .= " where id in (" . implode(', ', $list_ids) . ")";
+
+    function categories_select_all(){
+        $sql = "Seletc * from categoies ";
+        return pdo_query($sql);
     }
-    return pdo_query($sqlQuery);
-}
     function categories_select_one($id){
-        $sql = "SELECT * FROM categories where id  = ?";
-        return pdo_query_one($sql, $id);
+        $sql = "SELECT * FROM categoies where id  = ?";
+        return pdo_query_one($sql,$id);
     }
     function categories_insert($name){
-         $sql = "INSERT INTO categories(name) Values (?)";
+         $sql = "INSERT INTO categoies(name) Values (?)";
          pdo_execute($sql , $name);
     }
      function categories_update($id,$name){
@@ -21,7 +17,7 @@ function get_all_categories($list_ids = []){
         pdo_execute($sql , $name , $id);
      }
      function categories_delete($id){
-        $sql = "DELETE FROM categories WHERE id = ?";
+        $sql = "DELETE FROM categoies WHERE id = ?";
         if(is_array($id)){
             foreach($id as $item){
                 pdo_execute($sql , $item);
